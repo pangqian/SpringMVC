@@ -29,6 +29,7 @@
                 <ref bean="mappingJacksonHttpMessageConverter"/> <!-- JSON转换器 -->
             </list>
         </property>
+
     </bean>
 
 
@@ -43,5 +44,5 @@
              <property name="prefix" value="/WEB-INF/pages/"></property>
              <property name="suffix" value=".jsp"></property>
        </bean>
-
+    <import resource="spring-context-redis.xml"/>
 </beans>
